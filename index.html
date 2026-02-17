@@ -684,7 +684,7 @@
         const list = document.getElementById('notes-list'); let notes = JSON.parse(localStorage.getItem('elsa_notes_sent')) || []; list.innerHTML = "";
         if(notes.length === 0) { list.innerHTML = "<p style='font-size:12px; color:#aaa;'>Belum ada pesan terkirim.</p>"; return; }
         notes.slice().reverse().forEach((note) => {
-            let div = document.createElement('div'); div.className = 'note-item'; div.innerHTML = `<div>"${note}"</div><span class="note-status">Terkirim ✅</span>`; list.appendChild(div);
+            let div = document.createElement('div'); div.className = 'note-item'; div.innerHTML = `<div>"${note}"</div><span class="note-status">Tersimpan ✅</span>`; list.appendChild(div);
         });
     }
 </script>
